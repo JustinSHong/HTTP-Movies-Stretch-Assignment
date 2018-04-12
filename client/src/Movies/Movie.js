@@ -1,6 +1,6 @@
-import React from 'react';
-import axios from 'axios';
-import MovieCard from './MovieCard';
+import React from "react";
+import axios from "axios";
+import MovieCard from "./MovieCard";
 export default class Movie extends React.Component {
   constructor(props) {
     super(props);
@@ -18,9 +18,9 @@ export default class Movie extends React.Component {
       this.fetchMovie(newProps.match.params.id);
     }
   }
-
+  // fetch a specific movie via its id when a user clicks on a movie's card
   fetchMovie = id => {
-    // this function needs to fire off a get request to localhost:5000/api/movies/:id
+    // this function needs to fire off a get request to localhost:3333/api/movies/:id
     // note that the id is dynamic.
   };
 
