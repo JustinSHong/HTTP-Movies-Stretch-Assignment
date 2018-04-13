@@ -12,7 +12,17 @@ export default class MovieCreate extends React.Component {
 		}
 	}
 
+	// render a form to add a new movie to the movie list
 	render() {
-		return ();
+		return (
+			<form>
+				<input />
+				<input />
+				<input />
+				<input />
+				<input />
+				<button type="button" onClick={}>Add New Movie</button>
+			</form>
+		);
 	}
 }
