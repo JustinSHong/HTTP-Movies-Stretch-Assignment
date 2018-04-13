@@ -3,6 +3,7 @@ import { Route, Switch } from "react-router-dom";
 import SavedList from "./Movies/SavedList";
 import MovieList from "./Movies/MovieList";
 import Movie from "./Movies/Movie";
+import MovieCreate from "./Movies/MovieCreate";
 
 export default class App extends Component {
   constructor() {
@@ -31,6 +32,7 @@ export default class App extends Component {
               return <Movie {...props} addToSavedList={this.addToSavedList} />;
             }}
           />
+          <Route path="/movies/add" component={MovieCreate} />
           <Route
             component={() => {
               return <h1>Whoa! Where do you think you're going?</h1>;
